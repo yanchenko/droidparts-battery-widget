@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.bwx.qs.battery;
+package org.droidparts.battery_widget;
 
-import static com.bwx.qs.battery.BatteryWidget.DESIGN_AWFULLY_COOL;
-import static com.bwx.qs.battery.BatteryWidget.PREFS;
-import static com.bwx.qs.battery.BatteryWidget.PREF_ACTIVITY_NAME;
-import static com.bwx.qs.battery.BatteryWidget.PREF_DESIGN_TYPE;
+import static org.droidparts.battery_widget.BatteryWidget.DESIGN_AWFULLY_COOL;
+import static org.droidparts.battery_widget.BatteryWidget.PREFS;
+import static org.droidparts.battery_widget.BatteryWidget.PREF_ACTIVITY_NAME;
+import static org.droidparts.battery_widget.BatteryWidget.PREF_DESIGN_TYPE;
 
 import android.app.Activity;
 import android.app.AlertDialog;

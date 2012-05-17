@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bwx.qs.battery;
+package org.droidparts.battery_widget;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -29,7 +29,7 @@ import android.widget.RemoteViews;
 
 public class BatteryWidget {
 
-	public static final String TAG = "bwx.qb";
+	public static final String TAG = "droidparts-battery-widget";
 
 	public static final String PREFS = "common";
 	public static final String PREF_PACKAGE_NAME = "package";
@@ -42,7 +42,7 @@ public class BatteryWidget {
 	public static final int DESIGN_AWFULLY_COOL = 2;
 	public static final int DESIGN_DESIGN_COLORFULL = 3;
 
-    private static final String MIME = "com.bwx.qs.battery/widget";
+    private static final String MIME = "org.droidparts.battery_widget/widget";
 	
 	public static void updateWidgets(Context context, int chargeLevel, boolean chargerConnected) {
 

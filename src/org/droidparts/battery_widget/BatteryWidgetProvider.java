@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.bwx.qs.battery;
+package org.droidparts.battery_widget;
 
-import static com.bwx.qs.battery.BatteryWidget.TAG;
+import static org.droidparts.battery_widget.BatteryWidget.TAG;
 
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -28,7 +28,7 @@ import android.util.Log;
 public class BatteryWidgetProvider extends AppWidgetProvider {
     
 	public static final String EXT_UPDATE_WIDGETS = "updateWidgets";
-	private static final String BATTERY_SERVICE_ACTION = "com.bwx.qs.battery.BatteryService";
+	private static final String BATTERY_SERVICE_ACTION = "org.droidparts.battery_widget.BatteryService";
 	
 	public void onEnabled(Context context) {
 		Log.d(TAG, "provider.enabled");

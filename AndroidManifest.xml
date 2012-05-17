@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.bwx.qs.battery" android:versionName="0.8.2"
-	android:versionCode="201010020" android:sharedUserId="beworx.com">
+	package="org.droidparts.battery_widget" android:versionName="0.8.2"
+	android:versionCode="201010020" android:sharedUserId="org.droidparts.battery_widget">
 
 	<supports-screens android:largeScreens="true" android:anyDensity="true" />
 
 	<application android:icon="@drawable/ic_icon"
-		android:label="@string/txt_quick_battery" android:process="beworx.com">
+		android:label="@string/txt_quick_battery" android:process="org.droidparts.battery_widget">
 
 		<receiver android:name=".BatteryWidgetProvider">
 			<intent-filter>
@@ -18,7 +18,7 @@
 
 		<service android:name=".BatteryService">
 			<intent-filter>
-				<action android:name="com.bwx.qs.battery.BatteryService" />
+				<action android:name="org.droidparts.battery_widget.BatteryService" />
 			</intent-filter>
 		</service>
 
@@ -30,7 +30,7 @@
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
-				<data android:mimeType="com.bwx.qs.battery/widget" />
+				<data android:mimeType="org.droidparts.battery_widget/widget" />
 			</intent-filter>
 		</activity>
 

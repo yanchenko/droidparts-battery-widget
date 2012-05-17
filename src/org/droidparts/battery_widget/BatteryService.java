@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.bwx.qs.battery;
+package org.droidparts.battery_widget;
 
-import static com.bwx.qs.battery.BatteryWidget.TAG;
-import static com.bwx.qs.battery.BatteryWidgetProvider.EXT_UPDATE_WIDGETS;
+import static org.droidparts.battery_widget.BatteryWidget.TAG;
+import static org.droidparts.battery_widget.BatteryWidgetProvider.EXT_UPDATE_WIDGETS;
 
 import java.lang.reflect.Field;
 

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.bwx.qs.battery;
+package org.droidparts.battery_widget;
 
-import static com.bwx.qs.battery.BatteryWidget.PREFS;
-import static com.bwx.qs.battery.BatteryWidget.PREF_ACTIVITY_NAME;
-import static com.bwx.qs.battery.BatteryWidget.PREF_CLASS_NAME;
-import static com.bwx.qs.battery.BatteryWidget.PREF_PACKAGE_NAME;
+import static org.droidparts.battery_widget.BatteryWidget.PREFS;
+import static org.droidparts.battery_widget.BatteryWidget.PREF_ACTIVITY_NAME;
+import static org.droidparts.battery_widget.BatteryWidget.PREF_CLASS_NAME;
+import static org.droidparts.battery_widget.BatteryWidget.PREF_PACKAGE_NAME;
 
 import java.util.ArrayList;
 import java.util.Arrays;
