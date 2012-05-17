@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="featured_activities">
+        <item>com.bwx.bequick/com.bwx.bequick.ShowSettingsActivity</item>
+        <item>com.android.settings/com.android.settings.BatteryInfo</item>
+        <item>com.android.settings/com.android.settings.fuelgauge.PowerUsageSummary</item>
+        <item>com.android.settings/com.android.settings.battery_history.BatteryHistory</item>
+        <item>com.android.settings/com.android.settings.UsageStats</item>
+        <item>com.android.settings/com.android.settings.TestingSettings</item>
+        <item>com.android.settings/com.android.settings.RadioInfos</item>
+    </string-array>
+    
+    <string-array name="design_names">
+    	<item>Classic</item> <!-- 0 -->
+    	<item>Colored classic</item> <!-- 3 -->
+     	<item>Modern</item> <!-- 2 (default) -->
+    	<item>Alternative</item> <!-- 1 -->
+    </string-array>
+    
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_quick_battery">Quick Battery</string>
+    <string name="txt_configuration">Установки</string>
+    <string name="txt_recommended">Рекомендуемые</string>
+    <string name="txt_other">Другие приложения</string>
+    <string name="msg_no_market">На Вашем устройстве нет Андроид-Маркета</string>
+    <string name="txt_assigned_activity">Запускаемое приложение</string>
+    <string name="txt_assigned_activity_descr">Выберите программу, которая будет запущена при нажатии на виджет</string>
+    <string name="txt_select_widget_design">Стиль виджета</string>
+    <string name="txt_download_qs">Скачать Quick Settings</string>
+    <string name="txt_download_qs_descr">Quick Settings помогут Вам контролировать настройки, влияющие на работоспособность батареи</string>
+    <string name="btn_done">Готово</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:minLevel="0" android:maxLevel="1" android:drawable="@drawable/ic_1_6" />
+	<item android:minLevel="2" android:maxLevel="15" android:drawable="@drawable/ic_2_5_2" />
+	<item android:minLevel="16" android:maxLevel="20" android:drawable="@drawable/ic_2_5_1" />
+	<item android:minLevel="21" android:maxLevel="30" android:drawable="@drawable/ic_2_4_2" />
+	<item android:minLevel="31" android:maxLevel="40" android:drawable="@drawable/ic_2_4_1" />
+	<item android:minLevel="41" android:maxLevel="60" android:drawable="@drawable/ic_2_3" />
+	<item android:minLevel="61" android:maxLevel="80" android:drawable="@drawable/ic_2_2" />
+	<item android:minLevel="81" android:maxLevel="100" android:drawable="@drawable/ic_2_1" />
+
+	<item android:minLevel="200" android:maxLevel="201" android:drawable="@drawable/ic_1_6" />
+	<item android:minLevel="202" android:maxLevel="215" android:drawable="@drawable/ic_1_5_2" />
+	<item android:minLevel="216" android:maxLevel="220" android:drawable="@drawable/ic_1_5_1" />
+	<item android:minLevel="221" android:maxLevel="230" android:drawable="@drawable/ic_1_4_2" />
+	<item android:minLevel="231" android:maxLevel="240" android:drawable="@drawable/ic_1_4_1" />
+	<item android:minLevel="241" android:maxLevel="260" android:drawable="@drawable/ic_1_3" />
+	<item android:minLevel="261" android:maxLevel="280" android:drawable="@drawable/ic_1_2" />
+	<item android:minLevel="281" android:maxLevel="300" android:drawable="@drawable/ic_1_1" />
+
+	<item android:minLevel="400" android:maxLevel="407" android:drawable="@drawable/ic_1_6" />
+	<item android:minLevel="408" android:maxLevel="420" android:drawable="@drawable/ic_2_5_2" />
+	<item android:minLevel="421" android:maxLevel="440" android:drawable="@drawable/ic_3_4_1" />
+	<item android:minLevel="441" android:maxLevel="460" android:drawable="@drawable/ic_3_3" />
+	<item android:minLevel="461" android:maxLevel="480" android:drawable="@drawable/ic_3_2" />
+	<item android:minLevel="481" android:maxLevel="500" android:drawable="@drawable/ic_3_1" />
+	
+</level-list>

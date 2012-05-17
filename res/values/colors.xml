@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="cm_startLightGray">#808080</color>
+	<color name="cm_endLightGray">#9F9F9F</color>
+</resources>

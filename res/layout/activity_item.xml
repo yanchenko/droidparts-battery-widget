@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="?android:attr/listPreferredItemHeight"
+	android:id="@+id/item" android:focusable="true"
+	android:background="@android:drawable/list_selector_background"
+	android:nextFocusRight="@+id/button1" android:padding="6dip">
+
+	<ImageView android:id="@+id/icon" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_marginRight="6dip"
+		android:src="@drawable/ic_1_1" android:maxWidth="48dp"
+		android:maxHeight="48dp" android:layout_width="48dp"/>
+
+	<Button android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="Preview" android:id="@+id/button1"
+		android:focusable="true" android:nextFocusLeft="@id/item"
+		android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+
+	<TextView android:id="@+id/text1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textAppearance="@style/ContactActionText"
+		android:layout_toRightOf="@id/icon" android:layout_toLeftOf="@id/button1"
+		android:singleLine="true" android:ellipsize="end" android:text="Settings text"
+		android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
