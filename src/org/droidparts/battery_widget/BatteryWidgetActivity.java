@@ -57,7 +57,7 @@ public class BatteryWidgetActivity extends Activity implements OnClickListener,
 		findViewById(R.id.link1).setOnClickListener(this);
 		findViewById(R.id.button1).setOnClickListener(this);
 
-		mPrefs = getApplication().getSharedPreferences(PREFS, MODE_WORLD_WRITEABLE);
+		mPrefs = getApplication().getSharedPreferences(PREFS, MODE_PRIVATE);
 	}
 
 	protected void onPause() {

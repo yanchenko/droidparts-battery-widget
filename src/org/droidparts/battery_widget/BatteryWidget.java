@@ -16,6 +16,7 @@
 
 package org.droidparts.battery_widget;
 
+import static android.content.Context.MODE_PRIVATE;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
@@ -46,7 +47,7 @@ public class BatteryWidget {
 	
 	public static void updateWidgets(Context context, int chargeLevel, boolean chargerConnected) {
 
-		SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_WORLD_READABLE);
+		SharedPreferences prefs = context.getSharedPreferences(PREFS, MODE_PRIVATE);
 		int design = prefs.getInt(PREF_DESIGN_TYPE, DESIGN_AWFULLY_COOL);
 		
 		String level = chargeLevel < 10 ? "0" + chargeLevel : String.valueOf(chargeLevel);
@@ -87,7 +88,7 @@ public class BatteryWidget {
 
 	private static PendingIntent getPendingIntent(Context context) {
 
-		SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_WORLD_READABLE);
+		SharedPreferences prefs = context.getSharedPreferences(PREFS, MODE_PRIVATE);
 		String name = prefs.getString(PREF_ACTIVITY_NAME, null);
 		
 		if (name == null) {

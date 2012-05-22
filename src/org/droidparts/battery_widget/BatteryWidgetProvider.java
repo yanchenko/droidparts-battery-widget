@@ -16,6 +16,8 @@
 
 package org.droidparts.battery_widget;
 
+import static android.content.Context.MODE_PRIVATE;
+import static org.droidparts.battery_widget.BatteryWidget.PREFS;
 import static org.droidparts.battery_widget.BatteryWidget.TAG;
 
 import android.appwidget.AppWidgetManager;
@@ -45,7 +47,7 @@ public class BatteryWidgetProvider extends AppWidgetProvider {
 		context.stopService(intent);
 		
 		// remove configuration
-		SharedPreferences prefs = context.getSharedPreferences(BatteryWidget.PREFS, Context.MODE_WORLD_READABLE);
+		SharedPreferences prefs = context.getSharedPreferences(PREFS, MODE_PRIVATE);
 		prefs.edit().remove(BatteryWidget.PREF_ACTIVITY_NAME).commit();
 	}
 

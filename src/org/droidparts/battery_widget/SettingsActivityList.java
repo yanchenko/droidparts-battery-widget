@@ -263,7 +263,7 @@ public class SettingsActivityList extends ExpandableListActivity implements OnCl
 			ActivityInfo activityInfo = (ActivityInfo) view.getTag();
 
 			// store configuration
-			SharedPreferences prefs = getApplication().getSharedPreferences(PREFS, MODE_WORLD_WRITEABLE);
+			SharedPreferences prefs = getApplication().getSharedPreferences(PREFS, MODE_PRIVATE);
 			prefs.edit().putString(PREF_CLASS_NAME, activityInfo.name).putString(PREF_PACKAGE_NAME,
 					activityInfo.packageName).putString(PREF_ACTIVITY_NAME,
 					activityInfo.loadLabel(mPackageManager).toString()).commit();
