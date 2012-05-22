@@ -4,12 +4,9 @@
     <string name="txt_configuration">Configuration</string>
     <string name="txt_recommended">Featured activities</string>
     <string name="txt_other">Other activities</string>
-    <string name="msg_no_market">You have no Android Market application installed on your device</string>
     <string name="txt_assigned_activity">Activity to launch</string>
     <string name="txt_assigned_activity_descr">This activity will be launched when you tap the widget</string>
     <string name="txt_select_widget_design">Widget\'s style</string>
-    <string name="txt_download_qs">Download Quick Settings</string>
-    <string name="txt_download_qs_descr">Quick Settings helps you to control settings impacting your battery life</string>
     <string name="btn_done">Done</string>
     
 </resources>

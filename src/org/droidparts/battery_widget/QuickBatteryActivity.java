@@ -28,10 +28,7 @@ import android.appwidget.AppWidgetManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -39,12 +36,10 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuickBatteryActivity extends Activity implements OnClickListener,
 		android.content.DialogInterface.OnClickListener, Runnable {
 
-	private static final String QS_PACKAGE = "com.bwx.bequick";
 	private static final int[] LEVELS = new int[] {100, 99, 80, 60, 40, 30, 20, 10, 1};
 	private static final int[] MAPPING = new int[] {0, 3, 2, 1};
 
@@ -58,9 +53,8 @@ public class QuickBatteryActivity extends Activity implements OnClickListener,
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.configuration);
 
+		findViewById(R.id.link0).setOnClickListener(this);
 		findViewById(R.id.link1).setOnClickListener(this);
-		findViewById(R.id.link2).setOnClickListener(this);
-		findViewById(R.id.link3).setOnClickListener(this);
 		findViewById(R.id.button1).setOnClickListener(this);
 
 		mPrefs = getApplication().getSharedPreferences(PREFS, MODE_WORLD_WRITEABLE);
@@ -91,10 +85,6 @@ public class QuickBatteryActivity extends Activity implements OnClickListener,
 			setResult(RESULT_OK, resultValue);
 		}
 
-		// otherwise we have to show activity
-		View link2 = findViewById(R.id.link2);
-		link2.setVisibility(isQuickSettingsInstalled() ? View.GONE : View.VISIBLE);
-
 		// update description
 		String name = mPrefs.getString(PREF_ACTIVITY_NAME, null);
 		TextView textView = (TextView) findViewById(R.id.assigned_activity_descr);
@@ -104,16 +94,6 @@ public class QuickBatteryActivity extends Activity implements OnClickListener,
 		updateWidgetPreview(100);
 		
 		mHandler.postDelayed(this, 1000);
-	}
-
-	private boolean isQuickSettingsInstalled() {
-		PackageManager pm = getPackageManager();
-		try {
-			pm.getPackageInfo(QS_PACKAGE, 0);
-			return true;
-		} catch (NameNotFoundException e) {
-			return false;
-		}
 	}
 	
  	private void updateWidgetPreview(int chargeLevel) {
@@ -151,19 +131,11 @@ public class QuickBatteryActivity extends Activity implements OnClickListener,
 
 	public void onClick(View view) {
 		int id = view.getId();
-		if (id == R.id.link1) {
+		if (id == R.id.link0) { // choose design
+			showDialog(0);
+		} else if (id == R.id.link1) {
 			Intent intent = new Intent(this, SettingsActivityList.class);
 			startActivity(intent);
-		} else if (id == R.id.link2) {
-			try {
-				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=" + QS_PACKAGE));
-				startActivity(intent);
-			} catch (Exception e) {
-				e.printStackTrace();
-				Toast.makeText(this, R.string.msg_no_market, Toast.LENGTH_LONG).show();
-			}
-		} else if (id == R.id.link3) { // choose design
-			showDialog(0);
 		} else if (id == R.id.button1) { // done
 			finish();
 		}
