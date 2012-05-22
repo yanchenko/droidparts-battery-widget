@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="txt_quick_battery">Quick Battery</string>
+    <string name="txt_battery_widget">Battery Widget</string>
     <string name="txt_configuration">Установки</string>
     <string name="txt_recommended">Рекомендуемые</string>
     <string name="txt_other">Другие приложения</string>

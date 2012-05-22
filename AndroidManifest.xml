@@ -6,7 +6,7 @@
 	<supports-screens android:largeScreens="true" android:anyDensity="true" />
 
 	<application android:icon="@drawable/ic_icon"
-		android:label="@string/txt_quick_battery" android:process="org.droidparts.battery_widget">
+		android:label="@string/txt_battery_widget" android:process="org.droidparts.battery_widget">
 
 		<receiver android:name=".BatteryWidgetProvider">
 			<intent-filter>
@@ -26,7 +26,7 @@
 			android:label="@string/txt_assigned_activity" />
 
 		<activity android:name=".QuickBatteryActivity" android:theme="@android:style/Theme.NoTitleBar"
-			android:label="@string/txt_quick_battery">
+			android:label="@string/txt_battery_widget">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />

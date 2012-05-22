@@ -15,7 +15,7 @@
 			android:paddingLeft="10dp" android:layout_height="wrap_content"
 			android:layout_gravity="center_vertical">
 
-			<TextView android:text="@string/txt_quick_battery"
+			<TextView android:text="@string/txt_battery_widget"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:textAppearance="@style/ContactText" android:shadowDx="0"
 				android:shadowDy="0" android:shadowColor="#333333"
