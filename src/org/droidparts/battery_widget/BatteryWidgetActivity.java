@@ -37,7 +37,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class QuickBatteryActivity extends Activity implements OnClickListener,
+public class BatteryWidgetActivity extends Activity implements OnClickListener,
 		android.content.DialogInterface.OnClickListener, Runnable {
 
 	private static final int[] LEVELS = new int[] {100, 99, 80, 60, 40, 30, 20, 10, 1};

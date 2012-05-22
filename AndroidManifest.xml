@@ -25,7 +25,7 @@
 		<activity android:name=".SettingsActivityList"
 			android:label="@string/txt_assigned_activity" />
 
-		<activity android:name=".QuickBatteryActivity" android:theme="@android:style/Theme.NoTitleBar"
+		<activity android:name=".BatteryWidgetActivity" android:theme="@android:style/Theme.NoTitleBar"
 			android:label="@string/txt_battery_widget">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />

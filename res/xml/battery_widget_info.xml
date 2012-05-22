@@ -4,6 +4,6 @@
     android:minWidth="72dp"
     android:minHeight="72dp"
     android:updatePeriodMillis="150000"
-    android:configure="org.droidparts.battery_widget.QuickBatteryActivity"
+    android:configure="org.droidparts.battery_widget.BatteryWidgetActivity"
     android:initialLayout="@layout/battery_widget">
 </appwidget-provider>
