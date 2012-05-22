@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="org.droidparts.battery_widget" android:versionName="0.8.2"
-	android:versionCode="201010020" android:sharedUserId="org.droidparts.battery_widget">
+	package="org.droidparts.battery_widget" android:versionName="1.0"
+	android:versionCode="201205220" android:sharedUserId="org.droidparts.battery_widget">
 
 	<supports-screens android:largeScreens="true" android:anyDensity="true" />
 
