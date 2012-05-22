@@ -2,7 +2,6 @@
 <resources>
     
     <string-array name="featured_activities">
-        <item>com.bwx.bequick/com.bwx.bequick.ShowSettingsActivity</item>
         <item>com.android.settings/com.android.settings.BatteryInfo</item>
         <item>com.android.settings/com.android.settings.fuelgauge.PowerUsageSummary</item>
         <item>com.android.settings/com.android.settings.battery_history.BatteryHistory</item>
