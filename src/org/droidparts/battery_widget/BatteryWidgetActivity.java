@@ -40,7 +40,7 @@ import android.widget.TextView;
 public class BatteryWidgetActivity extends Activity implements OnClickListener,
 		android.content.DialogInterface.OnClickListener, Runnable {
 
-	private static final int[] LEVELS = new int[] {100, 99, 80, 60, 40, 30, 20, 10, 1};
+	private static final int[] LEVELS = new int[] {1, 10, 20, 30, 40, 60, 80, 99, 100};
 	private static final int[] MAPPING = new int[] {0, 3, 2, 1};
 
 	private Handler mHandler = new Handler();
