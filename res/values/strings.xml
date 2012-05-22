@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
     <string name="txt_quick_battery">Quick Battery</string>
     <string name="txt_configuration">Configuration</string>
     <string name="txt_recommended">Featured activities</string>
@@ -8,5 +9,12 @@
     <string name="txt_assigned_activity_descr">This activity will be launched when you tap the widget</string>
     <string name="txt_select_widget_design">Widget\'s style</string>
     <string name="btn_done">Done</string>
+    
+    <string-array name="design_names">
+    	<item>Classic</item> <!-- 0 -->
+    	<item>Colored classic</item> <!-- 3 -->
+     	<item>Modern</item> <!-- 2 (default) -->
+    	<item>Alternative</item> <!-- 1 -->
+    </string-array>
     
 </resources>

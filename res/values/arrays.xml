@@ -10,11 +10,4 @@
         <item>com.android.settings/com.android.settings.RadioInfos</item>
     </string-array>
     
-    <string-array name="design_names">
-    	<item>Classic</item> <!-- 0 -->
-    	<item>Colored classic</item> <!-- 3 -->
-     	<item>Modern</item> <!-- 2 (default) -->
-    	<item>Alternative</item> <!-- 1 -->
-    </string-array>
-    
 </resources>
